@@ -12,8 +12,8 @@ function draw() {
   noStroke();
   // brushSizeX = random(50);
   // brushSizeY = random(50);
-  brushSizeX = 20;
-  brushSizeY = 50;
+  brushSizeX = 10 + random(30);
+  // brushSizeY = ÷50;
   
   
   // Draw a circle at the mouse position to reveal the text
@@ -23,11 +23,11 @@ function draw() {
         push();
         textSize(random(200));
         textFont('Helvetica');
-        textAlign(CENTER, CENTER);
+        // textAlign(CENTER, CENTER);
         stroke(0);
         strokeWeight(3);
         fill(255);
-        text("obsolete", width / random(5), height / random(5));
+        text("obsolete", random(width), random(height));
         pop();
     }
   }
