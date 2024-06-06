@@ -1,7 +1,7 @@
 let brushSizeX = 10;
 let brushSizeY = 30
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth-(windowWidth*.05), windowHeight-(windowHeight*.05));
   background(255);
 
 }
@@ -19,7 +19,8 @@ function draw() {
   // Draw a circle at the mouse position to reveal the text
   if (mouseIsPressed) {
     ellipse(mouseX, mouseY, brushSizeX, brushSizeX*3);
-      if (frameCount % 1 < 1) {
+      // if (frameCount % 1 < 1) {
+      if (frameCount >0) {
         push();
         textSize(random(200));
         textFont('Helvetica');
