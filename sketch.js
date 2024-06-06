@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   // Set the brush color to black
-  fill(random(255),random(255),random(255));
+  fill(random(255),random(255),random(255),255);
   noStroke();
   // brushSizeX = random(50);
   // brushSizeY = random(50);
@@ -27,7 +27,7 @@ function draw() {
         stroke(0);
         strokeWeight(3);
         fill(255);
-        text("obsolete", random(width), random(height));
+        text("obsolete", random(width-200,width), random(height));
         pop();
     }
   }
